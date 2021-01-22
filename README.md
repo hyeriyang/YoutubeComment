@@ -23,7 +23,6 @@
 
 ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4cc2d2db-46fc-44a2-9f5d-a02c5599ae95/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4cc2d2db-46fc-44a2-9f5d-a02c5599ae95/Untitled.png)
 
-레이블링이 잘 안된 것도 몇몇 존재하지만 레이블링이 생각보다 잘 된 것 같다
 
 ### 2. 불용어처리 & 토큰화
 
@@ -57,16 +56,6 @@
 
 ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1b62f635-39b2-4514-b961-1c07784a2b20/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1b62f635-39b2-4514-b961-1c07784a2b20/Untitled.png)
 
-**+) 인코딩이 잘 되었는지 확인**
-
-(1) 원본 형태소 데이터
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/35fea7fe-1f95-48ee-a1a9-73650d1ee8bd/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/35fea7fe-1f95-48ee-a1a9-73650d1ee8bd/Untitled.png)
-
-(2)  인코딩 후 데이터
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/da8bea62-fdca-445a-91ef-12b81ee09f0e/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/da8bea62-fdca-445a-91ef-12b81ee09f0e/Untitled.png)
-
 ### 6. Padding
 
 - 훈련데이터에서 각 샘플의 길이가 다르므로 샘플 길이를 동일하게 맞춰주는 padding 작업이 필요
@@ -81,8 +70,6 @@
 (2) 샘플 비율
 
 ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e454eebe-518b-45ce-a0de-cd575c1de99a/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e454eebe-518b-45ce-a0de-cd575c1de99a/Untitled.png)
-
-→ 길이가 35가 되면서 비율 증가세가 점점 완만해짐 ! 최대길이(샘플길이)를 35로 정하자
 
 - 패딩할 샘플길이 35로 설정
 - keras의 pad_sequences 이용
@@ -149,6 +136,3 @@ lstm보다 Bi-lstm, GRU가 성능 높음
 
 ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/21383448-580e-42bb-ad3b-3575e6d4bd9b/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/21383448-580e-42bb-ad3b-3575e6d4bd9b/Untitled.png)
 
-✔️ 대체적으로 잘 분류
-
-✔️ 사각형으로 표시한 문장 같은 경우, 긍정단어가 포함된 문장이긴 하지만 부정으로 분류됐어야 올바른 데이터,,  이런 부분에서 분류기의 한계점이 보인다.
