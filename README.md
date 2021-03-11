@@ -1,4 +1,4 @@
-####### 감성분석 & LDA Topic modeling
+##### 감성분석 & LDA Topic modeling
 
 ### 0. Data
 
